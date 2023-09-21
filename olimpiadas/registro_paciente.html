@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo_registroPaciente.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Datos Médicos</h1>
+    <form action="#" method="post">
+        <!-- Datos Personales -->
+        <h2>Datos Personales</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="fecha_nacimiento">Documento</label>
+        <input type="number" id="documento" name="documento" required><br><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <!-- Datos Médicos -->
+        <h2>Datos Médicos</h2>
+        <label for="enfermedad">Enfermedad Actual:</label>
+        <input type="text" id="enfermedad" name="enfermedad" required><br><br>
+
+        <label for="genero">Estado:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Estable</option>
+            <option value="femenino">En rehabilitacion</option>
+            <option value="otro">En coma</option>
+            <option value="otro">Critico</option>
+        </select><br><br>
+
+        <!-- Ubicación -->
+        <h2>Ubicación</h2>
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area" required><br><br>
+
+        <label for="cuarto">Cuarto:</label>
+        <input type="text" id="cuarto" name="cuarto" required><br><br>
+
+        <!-- Enfermero Asignado -->
+        <h2>Enfermero Asignado</h2>
+        <label for="enfermero">Nombre del Enfermero:</label>
+        <input type="text" id="enfermero" name="enfermero" required><br><br>
+        <label for="enfermero">Id del enfermero:</label>
+        <input type="number" id="enfermero_id" name="enfermero" required><br><br>
+        <!-- Botón de Envío -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
